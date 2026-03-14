@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>John W. Greene — jwgreene.com</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#fff;--muted:#556;--accent:#0a66c2}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#0b1220}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px}
+    .card{max-width:820px;width:100%;background:var(--card);border-radius:12px;padding:36px;box-shadow:0 8px 30px rgba(9,17,28,0.08)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{margin:0 0 18px;color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+    .chip{background:#eef6ff;color:#044; padding:6px 10px;border-radius:999px;font-size:13px}
+    .links a{color:var(--accent);text-decoration:none}
+    footer{margin-top:20px;font-size:13px;color:#667}
+    .contact{margin-top:18px}
+    form input,form textarea{width:100%;padding:10px;margin-top:8px;border-radius:6px;border:1px solid #e6eef6}
+    form button{margin-top:10px;background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+    .note{font-size:13px;color:#556;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:16px">
+        <picture>
+          <source srcset="images/IMG_20211015_102706_small.avif" type="image/avif">
+          <source srcset="images/IMG_20211015_102706_small.webp" type="image/webp">
+          <img src="images/IMG_20211015_102706_small_opt.jpg" alt="John W. Greene headshot" style="width:96px;height:96px;border-radius:999px;object-fit:cover;box-shadow:0 6px 18px rgba(9,17,28,0.08)" />
+        </picture>
+        <div>
+          <h1 style="margin:0">John W. Greene</h1>
+          <p class="lead">Systems Architect & CTO — experienced in acquisitions, AI agent orchestration, and SaaS architecture. Interested in board roles.</p>
+        </div>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Distributed Systems</span>
+        <span class="chip">Cloud (AWS)</span>
+        <span class="chip">AI Agent Orchestration</span>
+        <span class="chip">SaaS Architecture</span>
+        <span class="chip">Observability</span>
+      </div>
+
+      <h3>Quick snapshot</h3>
+      <p>I lead teams shipping reliable, maintainable cloud systems. Experience spans Higher Education, K–12, and Non-Profit sectors.</p>
+
+      <h3>Get in touch</h3>
+      <p class="note">Prefer not to publish my email? Message me on LinkedIn or use the contact form below.</p>
+      <p class="links"><a href="https://www.linkedin.com/in/jwgreene" target="_blank">LinkedIn: /in/jwgreene</a></p>
+
+      <div class="contact">
+        <form method="POST" action="https://formspree.io/f/your-form-id">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <input type="hidden" name="_subject" value="Website contact: jwgreene.com" />
+          <button type="submit">Send message</button>
+        </form>
+        <p class="note">Note: replace the Formspree endpoint above with your form URL (https://formspree.io/f/...) or remove the form to keep contact via LinkedIn only.</p>
+      </div>
+
+      <footer>
+        <div>Interested in board roles • CTO experience across acquisitions, AI, and SaaS</div>
+        <div style="margin-top:8px">Sectors: Higher Education · K–12 · Non-Profit</div>
+        <div style="margin-top:10px;font-size:12px;color:#889">Built with a minimal single-page starter. Deploy from the `docs/` folder via GitHub Pages.</div>
+        <div style="margin-top:10px;font-size:13px">Photos: primary headshot shown; other images live in <a href="images/" style="color:var(--accent)">/docs/images/</a></div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
