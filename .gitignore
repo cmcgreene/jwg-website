@@ -3,3 +3,5 @@
 photos/
 docs/images/*.jpg
 !docs/images/*_opt.jpg
+!docs/images/*_hero.jpg
+!docs/images/*_small.jpg
